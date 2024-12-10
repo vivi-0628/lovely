@@ -1,0 +1,29 @@
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color:#FFE7E0;
+          padding-bottom: 50px; 
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 28px;
+          color:#D9B2A9;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color:#FFF8F7 ; 
+        }
+        td {
+            width: 10%;
+            height: 50px;
+            color:#F2BFBD;
+            border: 1px solid #D9B2A9;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 16px; 
+            cursor: pointer;
+            padding: 5px;
+        }

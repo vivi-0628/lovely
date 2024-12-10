@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Microsoft JhengHei', 'Source Han Serif', sans-serif;
+  background-color: #FFE7E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.slot-machine {
+  width: 600px;
+  height: 700px;
+  background: #FFE7E0;
+  border: 10px solid #F2BFBD;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.machine-frame {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.machine-title {
+  width: 100%;
+  background-color: #F2BFBD;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.screen {
+  background-color: #FFE7E0;
+  border: 4px solid #F2BFBD;
+  padding: 10px;
+  width: 550px;
+  height: 250px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #FFE7E0, #F2BFBD);
+}
+
+.slot-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.slot {
+  width: 100px;
+  height: 150px;
+  border: 3px solid #F2BFBD;
+  border-radius: 5px;
+  background-color: #FFE7E0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slot-cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFE7E0;
+  color: #F2BFBD;
+  text-align: center;
+  line-height: 150px;
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+  z-index: 2;
+  transition: top 0.5s ease-out;
+}
+
+.slot-item {
+  font-size: 60px;
+  line-height: 150px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  transition: top 0.05s ease-out;
+  color: #FFE7E0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button.spin-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #F2BFBD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.spin-btn:hover {
+  background-color: #A5A68F;
+}
+
+.text-box {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background: #F2BFBD;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.text-line {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #FAF4E3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

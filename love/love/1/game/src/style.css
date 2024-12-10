@@ -1,0 +1,166 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ffafcc, #c3a7ea);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.chat-container {
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ff6f91;
+}
+
+.header {
+  background-color: #ff6f91;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ff4e74;
+}
+
+.chat-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fce0e6;
+}
+
+.message {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message.mine {
+  align-items: flex-end;
+}
+
+.message .sender {
+  font-weight: bold;
+  color: #ff4e74;
+}
+
+.message .text {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 16px;
+  max-width: 75%;
+}
+
+.message.mine .text {
+  background-color: #ffe1f0;
+}
+
+.message.other .text {
+  background-color: #ffffff;
+}
+
+.answer-options {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.answer {
+  margin-top: 8px;
+  padding: 10px 20px;
+  background-color: #ff6f91;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 80%;
+  text-align: center;
+}
+
+.answer:hover {
+  background-color: #ff4e74;
+}
+
+.answer:disabled {
+  background-color: #ff4e74;
+  cursor: not-allowed;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.modal .modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.modal .modal-body {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.modal .modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal .modal-button {
+  padding: 10px 20px;
+  background-color: #ff4e74;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.modal .modal-button:hover {
+  background-color: #ff6f91;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

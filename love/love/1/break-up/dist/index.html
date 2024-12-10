@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Break-up</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  <title>Y2K風格的彈出視窗與雲朵</title>
+</head>
+<body>
+  <div class="window-container">
+    <div class="cloud cloud1">你是一個值得被愛的人</div>
+    <div class="cloud cloud2">想好了嗎</div>
+    <div class="cloud cloud3">做些自己喜歡的事</div>
+    <div class="cloud cloud4">時間會讓一切變得更好</div>
+
+    <div class="window">
+      <div class="window-header">
+        <span>感情問題</span>
+        <button class="close-btn" onclick="closeWindow()">X</button>
+      </div>
+      <div class="window-content">
+        <p>想分手?</p>
+        <button onclick="showMessage()">是</button>
+        <button onclick="changeContent()">否</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-window" id="popupWindow">
+    <div class="popup-header">
+      <span>彈出視窗</span>
+      <button class="popup-close-btn" onclick="closePopup()">X</button>
+    </div>
+    <div class="popup-content">
+      <p>這是彈出視窗的內容！</p>
+    </div>
+  </div>
+
+  <button class="reset-btn" onclick="resetPage()">return</button>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
